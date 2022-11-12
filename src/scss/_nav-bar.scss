@@ -1,0 +1,30 @@
+.nav-bar {
+	display: flex;
+	gap: 30px;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.nav-bar__link {
+	min-width: 50px;
+
+	text-align: center;
+	text-decoration: none;
+	color: #22356F;
+}
+
+.nav-bar__link:hover {
+	color: #62D0DF;
+	transition: all .3s linear;
+}
+
+.nav-bar__link--active:after {
+	display: block;
+	width: 100%;
+	min-height: 1px;
+	margin-top: 10px;
+
+	content: "";
+
+	background-color: #22356F;
+}

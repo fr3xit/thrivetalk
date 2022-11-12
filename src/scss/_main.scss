@@ -1,4 +1,8 @@
 .page {
+	position: relative;
+
+	overflow: hidden;
+
 	font-family: "Roboto", sans-serif;
 }
 
@@ -10,4 +14,14 @@
 img {
 	// fix отступа
 	vertical-align: top;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+}
+
+.link {
+	text-decoration: none;
+	color: inherit;
 }

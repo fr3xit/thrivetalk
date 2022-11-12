@@ -1,5 +1,45 @@
+.header {
+	position: absolute;
+	z-index: 1000;
+
+	display: flex;
+	justify-content: space-between;
+	width: calc(100% - 179px - 277px);
+	padding-left: 179px;
+	padding-top: 30px;
+}
+
 .logo {
 	font-size: 24px;
 	line-height: 26.72px;
 	color: #62d0df;
+}
+
+.logo:hover {
+	color: #22356f;
+	transition: all 0.3s linear;
+}
+
+.header__menu {
+	padding-right: 277px;
+}
+
+.header__btn {
+	position: absolute;
+	top: 20px;
+	right: -120px;
+
+	width: 150px;
+	height: 50px;
+
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff;
+	border-radius: 50px;
+	background: #62d0df;
+}
+
+.header__btn:hover {
+	color: #22356f;
+	transition: all 0.3s linear;
 }
