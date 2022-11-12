@@ -1,3 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 * {
-  background-color: aqua;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 26.72px;
+  color: #62d0df;
+}
+
+.page {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: top;
+}
+
+.thrive {
+  display: flex;
+  background-color: #62d0df;
+}
+
+.thrive__desc {
+  max-width: 555px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.thrive__title {
+  margin-top: 150px;
+  font-size: 36px;
+}
+
+.thrive__text {
+  margin-top: 75px;
+  font-size: 24px;
 }/*# sourceMappingURL=index.css.map */
