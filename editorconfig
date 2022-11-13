@@ -1,0 +1,16 @@
+root = true
+
+[*]
+
+# Для всех файлов используем unix-совместимые переносы строк
+end_of_line = lf
+insert_final_newline = true
+
+indent_style = tab
+indent_size = 2
+
+# Убрать пробелы из концов строк
+trim_trailing_whitespace=true
+
+# Кодировка
+charset=utf-8
