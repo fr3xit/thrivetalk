@@ -3,28 +3,28 @@
 	gap: 30px;
 	font-size: 14px;
 	line-height: 16px;
-}
 
-.nav-bar__link {
-	min-width: 50px;
+	&__link {
+		min-width: 50px;
 
-	text-align: center;
-	text-decoration: none;
-	color: #22356F;
-}
+		text-align: center;
+		text-decoration: none;
+		color: #22356f;
 
-.nav-bar__link:hover {
-	color: #62D0DF;
-	transition: all .3s linear;
-}
+		&:hover {
+			color: #62d0df;
+			transition: all 0.3s linear;
+		}
 
-.nav-bar__link--active:after {
-	display: block;
-	width: 100%;
-	min-height: 1px;
-	margin-top: 10px;
+		&--active:after {
+			display: block;
+			width: 100%;
+			min-height: 1px;
+			margin-top: 10px;
 
-	content: "";
+			content: "";
 
-	background-color: #22356F;
+			background-color: #22356f;
+		}
+	}
 }

@@ -9,89 +9,87 @@
 
 	background-color: #f4f9e2;
 	color: #22356f;
-}
 
-.intro__content {
-	padding-top: 164px;
-	height: 800px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	max-width: 500px;
-}
+	&__content {
+		padding-top: 164px;
+		height: 800px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 500px;
+	}
 
-.intro__title {
-	text-align: center;
-	font-size: 48px;
-}
+	&__title,
+	&__btn,
+	&__btn-text {
+		text-transform: uppercase;
+	}
 
-.intro__text {
+	&__title {
+		text-align: center;
+		font-size: 48px;
+	}
 
-	font-size: 24px;
-	line-height: 42.19px;
-}
+	&__text {
+		font-size: 24px;
+		line-height: 42.19px;
+	}
 
-.intro__title,
-.intro__btn,
-.intro__btn-text {
-	text-transform: uppercase;
-}
+	&__btn-wrap {
+		display: flex;
+		align-items: center;
 
-.intro__btn-wrap {
-	display: flex;
-	align-items: center;
+		line-height: 23px;
+	}
 
-	line-height: 23px;
-}
+	&__btn {
+		min-width: 150px;
+		min-height: 50px;
+		padding: 10px 30px;
 
-.intro__btn {
-	min-width: 150px;
-	min-height: 50px;
-	padding: 10px 30px;
+		background-color: #f9b640;
+		color: #fff;
 
-	background-color: #f9b640;
-	color: #fff;
-}
+		&:hover {
+			color: #22356f;
+			transition: all 0.3s linear;
+		}
+	}
 
-.intro__btn:hover {
-	color: #22356f;
-	transition: all 0.3s linear;
-}
+	&__btn-text {
+		margin-left: 38px;
+		color: #f9b640;
+	}
 
-.intro__btn-text {
-	margin-left: 38px;
-	color: #f9b640;
-}
+	// Decor
+	&__content::before,
+	&__content::after {
+		position: absolute;
 
-// Decor
-.intro__content::before,
-.intro__content::after {
-	position: absolute;
+		content: "";
 
-	content: "";
+		width: 807.71px;
+		height: 544.93px;
 
-	width: 807.71px;
-	height: 544.93px;
+		border-radius: 312.159px;
+	}
 
-	border-radius: 312.159px;
-}
+	&__content::before {
+		top: 0px;
+		right: -250.66px;
 
-.intro__content::before {
-	top: 0px;
-	right: -250.66px;
+		background: #edfdff;
+		transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+	}
 
-	background: #edfdff;
-	transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
-}
+	&__content::after {
+		top: 110px;
+		right: -250.66px;
 
-.intro__content::after {
+		background-position: center;
+		background-repeat: no-repeat;
 
-	top: 110px;
-	right: -250.66px;
-
-	background-position: center;
-	background-repeat: no-repeat;
-
-	background-image: url(../img/linkedin-sales-navigator-406825_2.jpg);
-	transform: rotate(-30deg);
+		background-image: url(../img/linkedin-sales-navigator-406825_2.jpg);
+		transform: rotate(-30deg);
+	}
 }

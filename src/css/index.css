@@ -4,162 +4,6 @@
   padding: 0;
 }
 
-.header {
-  position: absolute;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  width: calc(100% - 179px - 277px);
-  padding-left: 179px;
-  padding-top: 30px;
-}
-
-.logo {
-  font-size: 24px;
-  line-height: 26.72px;
-  color: #62d0df;
-}
-
-.logo:hover {
-  color: #22356f;
-  transition: all 0.3s linear;
-}
-
-.header__menu {
-  padding-right: 277px;
-}
-
-.header__btn {
-  position: absolute;
-  top: 20px;
-  right: -120px;
-  width: 150px;
-  height: 50px;
-  font-size: 14px;
-  line-height: 16px;
-  color: #fff;
-  border-radius: 50px;
-  background: #62d0df;
-}
-
-.header__btn:hover {
-  color: #22356f;
-  transition: all 0.3s linear;
-}
-
-.nav-bar {
-  display: flex;
-  gap: 30px;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.nav-bar__link {
-  min-width: 50px;
-  text-align: center;
-  text-decoration: none;
-  color: #22356F;
-}
-
-.nav-bar__link:hover {
-  color: #62D0DF;
-  transition: all 0.3s linear;
-}
-
-.nav-bar__link--active:after {
-  display: block;
-  width: 100%;
-  min-height: 1px;
-  margin-top: 10px;
-  content: "";
-  background-color: #22356F;
-}
-
-.intro {
-  position: relative;
-  max-width: 1117px;
-  min-height: 840px;
-  padding-top: 50px;
-  padding-left: 179px;
-  padding-bottom: 75px;
-  background-color: #f4f9e2;
-  color: #22356f;
-}
-
-.intro__content {
-  padding-top: 164px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 500px;
-}
-
-.intro__title {
-  text-align: center;
-  font-size: 48px;
-}
-
-.intro__text {
-  font-size: 24px;
-  line-height: 42.19px;
-}
-
-.intro__title,
-.intro__btn,
-.intro__btn-text {
-  text-transform: uppercase;
-}
-
-.intro__btn-wrap {
-  display: flex;
-  align-items: center;
-  line-height: 23px;
-}
-
-.intro__btn {
-  min-width: 150px;
-  min-height: 50px;
-  padding: 10px 30px;
-  background-color: #f9b640;
-  color: #fff;
-}
-
-.intro__btn:hover {
-  color: #22356f;
-  transition: all 0.3s linear;
-}
-
-.intro__btn-text {
-  margin-left: 38px;
-  color: #f9b640;
-}
-
-.intro__content::before,
-.intro__content::after {
-  position: absolute;
-  content: "";
-  width: 807.71px;
-  height: 544.93px;
-  border-radius: 312.159px;
-}
-
-.intro__content::before {
-  top: 0px;
-  right: -250.66px;
-  background: #edfdff;
-  transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
-}
-
-.intro__content::after {
-  top: 110px;
-  right: -250.66px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(../img/linkedin-sales-navigator-406825_2.jpg);
-  transform: rotate(-30deg);
-}
-
 .page {
   position: relative;
   overflow: hidden;
@@ -175,32 +19,164 @@ img {
   vertical-align: top;
 }
 
-.btn {
+button {
   border: none;
   cursor: pointer;
 }
 
-.link {
+a {
   text-decoration: none;
   color: inherit;
+}
+
+.header {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 179px - 277px);
+  padding-left: 179px;
+  padding-top: 30px;
+}
+.header__menu {
+  padding-right: 277px;
+}
+.header__btn {
+  position: absolute;
+  top: 20px;
+  right: -120px;
+  width: 150px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  border-radius: 50px;
+  background: #62d0df;
+}
+.header__btn:hover {
+  color: #22356f;
+  transition: all 0.3s linear;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 26.72px;
+  color: #62d0df;
+}
+.logo:hover {
+  color: #22356f;
+  transition: all 0.3s linear;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.nav-bar__link {
+  min-width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: #22356f;
+}
+.nav-bar__link:hover {
+  color: #62d0df;
+  transition: all 0.3s linear;
+}
+.nav-bar__link--active:after {
+  display: block;
+  width: 100%;
+  min-height: 1px;
+  margin-top: 10px;
+  content: "";
+  background-color: #22356f;
+}
+
+.intro {
+  position: relative;
+  max-width: 1117px;
+  min-height: 840px;
+  padding-top: 50px;
+  padding-left: 179px;
+  padding-bottom: 75px;
+  background-color: #f4f9e2;
+  color: #22356f;
+}
+.intro__content {
+  padding-top: 164px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+}
+.intro__title, .intro__btn, .intro__btn-text {
+  text-transform: uppercase;
+}
+.intro__title {
+  text-align: center;
+  font-size: 48px;
+}
+.intro__text {
+  font-size: 24px;
+  line-height: 42.19px;
+}
+.intro__btn-wrap {
+  display: flex;
+  align-items: center;
+  line-height: 23px;
+}
+.intro__btn {
+  min-width: 150px;
+  min-height: 50px;
+  padding: 10px 30px;
+  background-color: #f9b640;
+  color: #fff;
+}
+.intro__btn:hover {
+  color: #22356f;
+  transition: all 0.3s linear;
+}
+.intro__btn-text {
+  margin-left: 38px;
+  color: #f9b640;
+}
+.intro__content::before, .intro__content::after {
+  position: absolute;
+  content: "";
+  width: 807.71px;
+  height: 544.93px;
+  border-radius: 312.159px;
+}
+.intro__content::before {
+  top: 0px;
+  right: -250.66px;
+  background: #edfdff;
+  transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
+}
+.intro__content::after {
+  top: 110px;
+  right: -250.66px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/linkedin-sales-navigator-406825_2.jpg);
+  transform: rotate(-30deg);
 }
 
 .thrive {
   display: flex;
   background-color: #62d0df;
 }
-
 .thrive__desc {
   max-width: 555px;
   margin: 0 auto;
   color: #fff;
 }
-
 .thrive__title {
   margin-top: 150px;
   font-size: 36px;
 }
-
 .thrive__text {
   margin-top: 75px;
   font-size: 24px;
