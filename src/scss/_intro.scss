@@ -2,7 +2,7 @@
 	position: relative;
 
 	max-width: 1117px;
-	min-height: 840px;
+	// min-height: 840px;
 	padding-top: 50px;
 	padding-left: 179px;
 	padding-bottom: 75px;
@@ -12,10 +12,10 @@
 
 	&__content {
 		padding-top: 164px;
-		height: 800px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		// height: 800px;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: space-between;
 		max-width: 500px;
 	}
 
@@ -26,16 +26,22 @@
 	}
 
 	&__title {
-		text-align: center;
+		margin-top: 35px;
+
+		// text-align: center;
 		font-size: 48px;
 	}
 
 	&__text {
+		margin-top: 65px;
+
 		font-size: 24px;
 		line-height: 42.19px;
 	}
 
 	&__btn-wrap {
+		margin-top: 60px;
+
 		display: flex;
 		align-items: center;
 
@@ -83,7 +89,7 @@
 	}
 
 	&__content::after {
-		top: 110px;
+		top: 130px;
 		right: -250.66px;
 
 		background-position: center;

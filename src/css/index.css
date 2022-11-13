@@ -96,7 +96,6 @@ a {
 .intro {
   position: relative;
   max-width: 1117px;
-  min-height: 840px;
   padding-top: 50px;
   padding-left: 179px;
   padding-bottom: 75px;
@@ -105,24 +104,22 @@ a {
 }
 .intro__content {
   padding-top: 164px;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   max-width: 500px;
 }
 .intro__title, .intro__btn, .intro__btn-text {
   text-transform: uppercase;
 }
 .intro__title {
-  text-align: center;
+  margin-top: 35px;
   font-size: 48px;
 }
 .intro__text {
+  margin-top: 65px;
   font-size: 24px;
   line-height: 42.19px;
 }
 .intro__btn-wrap {
+  margin-top: 60px;
   display: flex;
   align-items: center;
   line-height: 23px;
@@ -156,7 +153,7 @@ a {
   transform: matrix(-0.5, 0.87, 0.87, 0.5, 0, 0);
 }
 .intro__content::after {
-  top: 110px;
+  top: 130px;
   right: -250.66px;
   background-position: center;
   background-repeat: no-repeat;
