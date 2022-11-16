@@ -7,8 +7,12 @@
 }
 
 .container {
-	max-width: 1440px;
+	max-width: $container;
 	margin: 0 auto;
+
+	@media (max-width: 990px) {
+		max-width: 90%;
+	}
 }
 
 img {

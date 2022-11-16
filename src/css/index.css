@@ -14,6 +14,11 @@
   max-width: 1440px;
   margin: 0 auto;
 }
+@media (max-width: 990px) {
+  .container {
+    max-width: 90%;
+  }
+}
 
 img {
   vertical-align: top;
@@ -29,55 +34,16 @@ a {
   color: inherit;
 }
 
-.header {
-  position: absolute;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  width: calc(100% - 179px - 277px);
-  padding-left: 179px;
-  padding-top: 30px;
-}
-.header__menu {
-  padding-right: 277px;
-}
-.header__btn {
-  position: absolute;
-  top: 20px;
-  right: -120px;
-  width: 150px;
-  height: 50px;
-  font-size: 14px;
-  line-height: 16px;
-  color: #fff;
-  border-radius: 50px;
-  background: #62d0df;
-}
-.header__btn:hover {
-  color: #22356f;
-  transition: all 0.3s linear;
-}
-
-.logo {
-  font-size: 24px;
-  line-height: 26.72px;
-  color: #62d0df;
-}
-.logo:hover {
-  color: #22356f;
-  transition: all 0.3s linear;
-}
-
 .nav-bar {
   display: flex;
   gap: 30px;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 16px;
 }
 .nav-bar__link {
   min-width: 50px;
   text-align: center;
-  text-decoration: none;
   color: #22356f;
 }
 .nav-bar__link:hover {
@@ -92,6 +58,120 @@ a {
   content: "";
   background-color: #22356f;
 }
+@media (max-width: 500px) {
+  .nav-bar__link {
+    text-align: left;
+  }
+}
+@media (max-width: 770px) {
+  .nav-bar {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 720px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.header {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  width: calc(100% - 179px - 277px);
+  padding-left: 179px;
+  padding-top: 30px;
+}
+@media (max-width: 770px) {
+  .header__logo {
+    width: 100%;
+  }
+}
+.header__menu {
+  padding-right: 277px;
+}
+@media (max-width: 990px) {
+  .header__menu {
+    padding-right: 0px;
+  }
+}
+.header__link--contact-decor {
+  position: absolute;
+  top: 50px;
+  right: -150px;
+  z-index: 5000;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background: #62d0df;
+}
+.header__link--contact-decor:hover {
+  color: #22356f;
+  transition: all 0.3s linear;
+}
+@media (max-width: 1440px) {
+  .header__link--contact-decor {
+    position: fixed;
+    right: 30px;
+  }
+}
+@media (max-width: 990px) {
+  .header__link--contact-decor {
+    position: static;
+    display: block;
+    width: initial !important;
+    height: initial !important;
+    padding-right: 50px;
+    color: #22356f;
+    text-transform: capitalize;
+    background: none;
+  }
+  .header__link--contact-decor:hover {
+    color: #62d0df;
+    transition: all 0.3s linear;
+  }
+}
+@media (max-width: 990px) {
+  .header {
+    position: static;
+    width: calc(100% - 60px);
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f4f9e2;
+  }
+}
+@media (max-width: 770px) {
+  .header {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 26.72px;
+  color: #62d0df;
+}
+.logo:hover {
+  color: #22356f;
+  transition: all 0.3s linear;
+}
 
 .intro {
   position: relative;
@@ -105,6 +185,11 @@ a {
 .intro__content {
   padding-top: 164px;
   max-width: 500px;
+}
+@media (max-width: 990px) {
+  .intro__content {
+    margin: 0 auto;
+  }
 }
 .intro__title, .intro__btn, .intro__btn-text {
   text-transform: uppercase;
@@ -142,9 +227,15 @@ a {
 .intro__content::before, .intro__content::after {
   position: absolute;
   content: "";
-  width: 807.71px;
+  width: 56.09%;
+  max-width: 807.71px;
   height: 544.93px;
   border-radius: 312.159px;
+}
+@media (max-width: 990px) {
+  .intro__content::before, .intro__content::after {
+    display: none;
+  }
 }
 .intro__content::before {
   top: 0px;
@@ -160,6 +251,12 @@ a {
   background-image: url(../img/linkedin-sales-navigator-406825_2.jpg);
   transform: rotate(-30deg);
 }
+@media (max-width: 990px) {
+  .intro {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 
 .thrive {
   display: flex;
@@ -174,7 +271,35 @@ a {
   margin-top: 150px;
   font-size: 36px;
 }
+@media (max-width: 990px) {
+  .thrive__title {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
 .thrive__text {
   margin-top: 75px;
   font-size: 24px;
+}
+@media (max-width: 990px) {
+  .thrive__text {
+    padding: 0 30px;
+  }
+}
+.thrive__img {
+  width: 36.4583333333%;
+}
+@media (max-width: 990px) {
+  .thrive__img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 555px;
+    order: -1;
+  }
+}
+@media (max-width: 990px) {
+  .thrive {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=index.css.map */

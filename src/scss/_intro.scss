@@ -17,6 +17,10 @@
 		// flex-direction: column;
 		// justify-content: space-between;
 		max-width: 500px;
+
+		@media (max-width: 990px) {
+			margin: 0 auto;
+		}
 	}
 
 	&__title,
@@ -74,10 +78,15 @@
 
 		content: "";
 
-		width: 807.71px;
+		width: 56.09%; //807.71px
+		max-width: 807.71px;
 		height: 544.93px;
 
 		border-radius: 312.159px;
+
+		@media (max-width: 990px) {
+			display: none;
+		}
 	}
 
 	&__content::before {
@@ -97,5 +106,10 @@
 
 		background-image: url(../img/linkedin-sales-navigator-406825_2.jpg);
 		transform: rotate(-30deg);
+	}
+
+	@media (max-width: 990px) {
+		padding-left:30px;
+		padding-right:30px;
 	}
 }
