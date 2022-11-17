@@ -15,36 +15,15 @@
 		margin-top: 150px;
 
 		font-size: 36px;
-
-		@media (max-width: 990px) {
-			margin-top: 50px;
-			text-align: center;
-		}
 	}
 
 	&__text {
 		margin-top: 75px;
 
 		font-size: 24px;
-
-		@media (max-width: 990px) {
-			padding: 0 30px;
-		}
 	}
 
 	&__img {
 		width: 525 / 1440 * 100%;
-
-		@media (max-width: 990px) {
-			margin: 0 auto;
-			width: 100%;
-			height: auto;
-			max-width: 555px;
-			order: -1;
-		}
-	}
-
-	@media (max-width: 990px) {
-		flex-direction: column;
 	}
 }

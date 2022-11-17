@@ -1,0 +1,142 @@
+@media (max-width: 1440px) {
+	.header__link--contact-decor {
+		position: fixed;
+		right: 30px;
+	}
+}
+
+@media (max-width: 990px) {
+	.container {
+		max-width: 90%;
+	}
+
+	.header {
+		position: static;
+
+		width: calc(100% - 60px);
+		padding-left: 30px;
+		padding-right: 30px;
+		background-color: #f4f9e2;
+
+		&__menu {
+			padding-right: 0px;
+		}
+	}
+
+	.intro {
+		padding-left: 30px;
+		padding-right: 30px;
+
+		&__content {
+			margin: 0 auto;
+			padding-top: 50px;
+		}
+
+		&__text {
+			margin-top: 30px;
+		}
+
+		&__content::before,
+		&__content::after {
+			display: none;
+		}
+	}
+
+	.thrive {
+		flex-direction: column;
+		&__title {
+			margin-top: 50px;
+			text-align: center;
+		}
+
+		&__text {
+			margin-top: 30px;
+			padding: 0 30px;
+		}
+
+		&__img {
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+			max-width: 555px;
+			order: -1;
+		}
+	}
+	.about-out {
+		padding-top: 50px;
+	}
+	.about {
+		&__title {
+			padding-left: 0px;
+			text-align: center;
+			padding-bottom: 30px;
+		}
+
+		&__text {
+			margin-top: 0px;
+		}
+	}
+
+	.help {
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 770px) {
+	.header {
+		flex-direction: column;
+
+		&__logo {
+			width: 100%;
+		}
+
+		&__link--contact-decor {
+			position: static;
+
+			display: block;
+		}
+	}
+
+	.nav-bar {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 500px) {
+	.header {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.nav-bar__link {
+		text-align: left;
+	}
+}
+
+// Чудо юдо
+@media (min-width: 990px) {
+	.header__link--contact-decor {
+		position: absolute;
+		top: 50px;
+		right: -150px;
+		z-index: 5000;
+
+		width: 150px;
+		height: 50px;
+
+		@include center_f;
+
+		font-size: 14px;
+		line-height: 16px;
+		color: #fff;
+		text-transform: uppercase;
+		border-radius: 50px;
+		background: #62d0df;
+
+		&:hover {
+			color: #22356f;
+			transition: all 0.3s linear;
+		}
+	}
+}
