@@ -3,6 +3,14 @@
 		position: fixed;
 		right: 30px;
 	}
+
+	.services-one {
+		flex-wrap: wrap;
+	}
+
+	.service {
+		width: 50%;
+	}
 }
 
 @media (max-width: 990px) {
@@ -100,6 +108,14 @@
 	.nav-bar {
 		flex-wrap: wrap;
 		flex-direction: column;
+	}
+
+	.services-one {
+		justify-content: center;
+	}
+
+	.service {
+		width: 90%;
 	}
 }
 
