@@ -1,5 +1,11 @@
 .services-box {
 	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+
+	&--indent {
+		margin-top: 120px;
+	}
 }
 
 .service {
@@ -10,9 +16,9 @@
 		padding-top: 72px;
 	}
 
-		&--size_b {
+	&--size_b {
 		width: 33%;
-		min-height: 480px;
+		min-height: 480px - 96px;
 		min-width: 480px;
 		padding-top: 96px;
 	}
@@ -32,7 +38,6 @@
 		content: "";
 		display: block;
 		width: 100%;
-		max-width: 255px;
 		height: 1px;
 		margin-bottom: 23px;
 		background-color: #fff;
@@ -57,4 +62,32 @@
 
 .iron2 {
 	background-color: #0052c1;
+}
+
+// Services 2
+.physical {
+	background-color: #22356f;
+}
+
+.mental {
+	background-color: #0052c1;
+}
+
+.nutrition {
+	background-image: url(../img/joanna-kosinska-340748.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gymnastics {
+	background-color: #62d0df;
+}
+
+.crossfit {
+	background-color: #dee1ff;
+}
+
+.aerobics {
+	background-color: #8F00FF;
 }
