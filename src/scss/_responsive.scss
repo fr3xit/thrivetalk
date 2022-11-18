@@ -13,6 +13,17 @@
 	}
 }
 
+@media (max-width: 1200px) {
+	.plan {
+		column-gap: 50px;
+		justify-content: center;
+
+		&__item {
+			max-width: 400px;
+		}
+	}
+}
+
 @media (max-width: 990px) {
 	.container {
 		max-width: 90%;

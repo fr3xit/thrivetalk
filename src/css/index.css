@@ -282,6 +282,28 @@ a {
   background-color: #8F00FF;
 }
 
+.plan {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  row-gap: 92px;
+  flex-wrap: wrap;
+  padding: 77px 100px;
+}
+.plan__item {
+  max-width: 300px;
+}
+.plan__tetle {
+  font-size: 28px;
+  line-height: 33px;
+  color: #22356f;
+}
+.plan__text {
+  margin-top: 28px;
+  color: rgba(34, 53, 111, 0.5019607843);
+  line-height: 25px;
+}
+
 @media (max-width: 1440px) {
   .header__link--contact-decor {
     position: fixed;
@@ -292,6 +314,16 @@ a {
   }
   .service {
     width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .plan {
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    justify-content: center;
+  }
+  .plan__item {
+    max-width: 400px;
   }
 }
 @media (max-width: 990px) {

@@ -1,0 +1,24 @@
+.plan {
+	@include flex;
+	row-gap: 92px;
+	flex-wrap: wrap;
+
+	padding: 77px 100px;
+
+	&__item {
+		max-width: 300px;
+	}
+
+	&__tetle {
+		font-size: 28px;
+		line-height: 33px;
+		color: #22356f;
+	}
+
+	&__text {
+		margin-top: 28px;
+
+		color: #22356f80;
+		line-height: 25px;
+	}
+}
