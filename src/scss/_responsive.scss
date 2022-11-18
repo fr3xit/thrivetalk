@@ -32,6 +32,17 @@
 			margin-top: 0px;
 		}
 	}
+
+	.contact {
+		&__content {
+			padding-top: 0;
+		}
+
+		&__description {
+			padding-top: 20px;
+			margin-top: 0px;
+		}
+	}
 }
 
 @media (max-width: 990px) {
@@ -122,6 +133,25 @@
 		&__content {
 			text-align: center;
 		}
+	}
+
+	.contact {
+		&__content {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			max-width: 100%;
+		}
+
+		&__img {
+			display: none;
+		}
+	}
+
+	.copyright  {
+		padding-left: 0px;
+		text-align: center;
 	}
 }
 
