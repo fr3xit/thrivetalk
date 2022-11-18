@@ -17,9 +17,12 @@
 	.plan {
 		column-gap: 50px;
 		justify-content: center;
+		padding: 50px 30px;
 
 		&__item {
+			width: calc(50% - 30px * 2);
 			max-width: 400px;
+			min-width: 225px;
 		}
 	}
 
@@ -33,13 +36,23 @@
 		}
 	}
 
+	.smile {
+		&__content {
+			padding-left: 30px;
+		}
+	}
+
 	.contact {
 		&__content {
-			padding-top: 0;
+			padding-top: 30px;
 		}
 
 		&__description {
 			padding-top: 20px;
+			margin-top: 0px;
+		}
+
+		&__phone {
 			margin-top: 0px;
 		}
 	}
@@ -60,6 +73,10 @@
 
 		&__menu {
 			padding-right: 0px;
+		}
+
+		&__link--contact-decor {
+			position: static;
 		}
 	}
 
@@ -135,6 +152,24 @@
 		}
 	}
 
+	.smile {
+		&__content {
+			margin: 0 auto;
+		}
+
+		&__img {
+			display: none;
+		}
+
+		&__sup-title {
+			margin-top: 30px;
+		}
+
+		&__text {
+			padding-top: 30px;
+		}
+	}
+
 	.contact {
 		&__content {
 			flex-wrap: wrap;
@@ -149,7 +184,7 @@
 		}
 	}
 
-	.copyright  {
+	.copyright {
 		padding-left: 0px;
 		text-align: center;
 	}
@@ -158,6 +193,10 @@
 @media (max-width: 770px) {
 	.header {
 		flex-direction: column;
+
+		&__menu {
+			display: none;
+		}
 
 		&__logo {
 			width: 100%;
@@ -182,16 +221,18 @@
 	.service {
 		width: 90%;
 	}
+
+	.plan {
+		&__item {
+			width: 90%;
+		}
+	}
 }
 
 @media (max-width: 500px) {
 	.header {
 		justify-content: center;
 		flex-wrap: wrap;
-	}
-
-	.nav-bar__link {
-		text-align: left;
 	}
 }
 

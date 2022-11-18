@@ -341,6 +341,45 @@ a {
   color: #FAB63E;
 }
 
+.smile {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  background-color: #22356f;
+}
+.smile__content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 580px;
+  padding-left: 180px;
+  color: #ffffff;
+}
+.smile__img {
+  max-width: 480px;
+  min-width: 360px;
+}
+.smile__sup-title {
+  margin-top: 103px;
+  line-height: 12px;
+}
+.smile__title {
+  font-size: 64px;
+  line-height: 94px;
+}
+.smile__text {
+  padding-top: 75px;
+  font-size: 36px;
+  line-height: 53px;
+}
+.smile__help {
+  display: block;
+  margin-top: 50px;
+  padding-bottom: 42px;
+  color: #62D0DF;
+}
+
 .contact {
   display: flex;
   gap: 30px;
@@ -413,9 +452,12 @@ a {
     -moz-column-gap: 50px;
          column-gap: 50px;
     justify-content: center;
+    padding: 50px 30px;
   }
   .plan__item {
+    width: calc(50% - 60px);
     max-width: 400px;
+    min-width: 225px;
   }
   .know__content {
     padding: 0 50px;
@@ -423,11 +465,17 @@ a {
   .know__title {
     margin-top: 0px;
   }
+  .smile__content {
+    padding-left: 30px;
+  }
   .contact__content {
-    padding-top: 0;
+    padding-top: 30px;
   }
   .contact__description {
     padding-top: 20px;
+    margin-top: 0px;
+  }
+  .contact__phone {
     margin-top: 0px;
   }
 }
@@ -444,6 +492,9 @@ a {
   }
   .header__menu {
     padding-right: 0px;
+  }
+  .header__link--contact-decor {
+    position: static;
   }
   .intro {
     padding-left: 30px;
@@ -500,6 +551,18 @@ a {
   .know__content {
     text-align: center;
   }
+  .smile__content {
+    margin: 0 auto;
+  }
+  .smile__img {
+    display: none;
+  }
+  .smile__sup-title {
+    margin-top: 30px;
+  }
+  .smile__text {
+    padding-top: 30px;
+  }
   .contact__content {
     flex-wrap: wrap;
   }
@@ -518,6 +581,9 @@ a {
   .header {
     flex-direction: column;
   }
+  .header__menu {
+    display: none;
+  }
   .header__logo {
     width: 100%;
   }
@@ -535,14 +601,14 @@ a {
   .service {
     width: 90%;
   }
+  .plan__item {
+    width: 90%;
+  }
 }
 @media (max-width: 500px) {
   .header {
     justify-content: center;
     flex-wrap: wrap;
-  }
-  .nav-bar__link {
-    text-align: left;
   }
 }
 @media (min-width: 990px) {

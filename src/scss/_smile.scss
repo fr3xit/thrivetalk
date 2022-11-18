@@ -1,0 +1,45 @@
+.smile {
+	@include flex;
+
+	background-color: #22356f;
+
+	&__content {
+		@include flex;
+		flex-direction: column;
+
+		max-width: 580px;
+		padding-left: 180px;
+
+		color: #ffffff;
+	}
+
+	&__img {
+		max-width: 480px;
+		min-width: 360px;
+	}
+
+	&__sup-title {
+		margin-top: 103px;
+		line-height: 12px;
+	}
+
+	&__title {
+		font-size: 64px;
+		line-height: 94px;
+	}
+
+	&__text {
+		padding-top: 75px;
+
+		font-size: 36px;
+		line-height: 53px;
+	}
+
+		&__help {
+		display: block;
+		margin-top: 50px;
+		padding-bottom: 42px;
+
+		color: #62D0DF;
+	}
+}
