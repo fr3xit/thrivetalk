@@ -1,12 +1,21 @@
-.services-one {
+.services-box {
 	display: flex;
 }
 
 .service {
-	width: 25%;
-	min-height: 360px;
-	min-width: 360px;
-	padding-top: 72px;
+	&--size_s {
+		width: 25%;
+		min-height: 360px - 72px;
+		min-width: 360px;
+		padding-top: 72px;
+	}
+
+		&--size_b {
+		width: 33%;
+		min-height: 480px;
+		min-width: 480px;
+		padding-top: 96px;
+	}
 
 	&__content {
 		padding: 0 78px;
@@ -34,18 +43,18 @@
 	}
 }
 
-.service-1 {
+.weight-lifting {
 	background-color: #ffe2de;
 }
 
-.service-2 {
+.running-spinning {
 	background-color: #c4e769;
 }
 
-.service-3 {
+.iron1 {
 	background-color: #62d0df;
 }
 
-.service-4 {
+.iron2 {
 	background-color: #0052c1;
 }
