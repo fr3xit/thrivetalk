@@ -22,6 +22,16 @@
 			max-width: 400px;
 		}
 	}
+
+	.know {
+		&__content {
+			padding: 0 50px;
+		}
+
+		&__title {
+			margin-top: 0px;
+		}
+	}
 }
 
 @media (max-width: 990px) {
@@ -102,6 +112,16 @@
 
 	.service--size_b {
 		width: 100%;
+	}
+
+	.know {
+		&__img {
+			display: none;
+		}
+
+		&__content {
+			text-align: center;
+		}
 	}
 }
 

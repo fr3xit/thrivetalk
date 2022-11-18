@@ -17,6 +17,8 @@
 
 img {
   vertical-align: top;
+  width: 100%;
+  height: auto;
 }
 
 button {
@@ -168,6 +170,7 @@ a {
 }
 .thrive__img {
   width: 36.4583333333%;
+  min-width: 435px;
 }
 
 .about-out {
@@ -304,6 +307,40 @@ a {
   line-height: 25px;
 }
 
+.know {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+.know__img {
+  width: 33.33%;
+  min-width: 270px;
+}
+.know__content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 106px;
+  padding-right: 175px;
+  max-width: 676px;
+  color: #22356F;
+}
+.know__title {
+  margin-top: 103px;
+  line-height: 12px;
+}
+.know__text {
+  font-size: 36px;
+  line-height: 53px;
+}
+.know__help {
+  display: block;
+  padding-bottom: 42px;
+  color: #FAB63E;
+}
+
 @media (max-width: 1440px) {
   .header__link--contact-decor {
     position: fixed;
@@ -324,6 +361,12 @@ a {
   }
   .plan__item {
     max-width: 400px;
+  }
+  .know__content {
+    padding: 0 50px;
+  }
+  .know__title {
+    margin-top: 0px;
   }
 }
 @media (max-width: 990px) {
@@ -388,6 +431,12 @@ a {
   }
   .service--size_b {
     width: 100%;
+  }
+  .know__img {
+    display: none;
+  }
+  .know__content {
+    text-align: center;
   }
 }
 @media (max-width: 770px) {
